@@ -25,7 +25,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         public string PersonelGorsel { get; set; }//string tutma amacım görselin kendisini değil yolunu tutucam
 
 
-        public SatisHareket SatisHareket { get; set; }
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
         //Bir personel yalnızca bir departmanda bulunabilir
         public Departman Departman { get; set; }
     }
