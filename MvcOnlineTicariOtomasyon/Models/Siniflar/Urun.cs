@@ -27,7 +27,8 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         public string UrunGorsel { get; set; }
 
         //her ürünün yalnızca bir kategorisi olabilir
-        public Kategori Kategori { get; set; }
+        public int Kategoriid { get; set; }    
+        public virtual Kategori Kategori { get; set; }
 
 
         public ICollection<SatisHareket>SatisHarekets { get; set; }
