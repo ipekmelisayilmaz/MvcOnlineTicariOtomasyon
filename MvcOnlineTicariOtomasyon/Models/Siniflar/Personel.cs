@@ -27,6 +27,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
 
         public ICollection<SatisHareket> SatisHarekets { get; set; }
         //Bir personel yalnızca bir departmanda bulunabilir
-        public Departman Departman { get; set; }
+        public int Departmanid { get; set; }
+        public virtual Departman Departman { get; set; }
     }
 }
