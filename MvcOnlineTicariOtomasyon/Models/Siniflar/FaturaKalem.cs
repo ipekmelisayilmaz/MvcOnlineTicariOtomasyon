@@ -20,7 +20,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Siniflar
         public decimal Tutar { get; set; }
 
         //Bir fatura kaleminin yalnızca bir faturası olabilir
-
-        public Faturalar Faturalar { get; set; }
+        public int Faturaid { get; set; }
+        public virtual Faturalar Faturalar { get; set; }
     }
 }
